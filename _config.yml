@@ -1,0 +1,19 @@
+# Header
+menu:
+  Home: /
+  Archives: /archives
+
+# Title on top left of menu. Leave empty to use main blog title
+menu_title: Start Bootstrap
+
+#
+index_cover: /img/home-bg.jpg
+
+# Read More text
+excerpt_link: Read More
+
+# Disqus Comments Shortname
+disqus_shortname:
+
+# Google Analytics Tracking ID
+google_analytics:
