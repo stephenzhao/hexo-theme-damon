@@ -115,6 +115,9 @@ hr.small
     color white
     @media only screen and (min-width: 768px)
       padding 150px 0
+    &.archives
+      color brand-primary
+      margin-top 60px
   .site-heading, .page-heading
     text-align center
     h1
@@ -164,6 +167,8 @@ hr.small
       font-size 30px
       margin-top 30px
       margin-bottom 10px
+      &.archive
+        font-size 22px
     > .post-subtitle
       margin 0
       font-weight 300
@@ -173,6 +178,8 @@ hr.small
     font-size 18px
     font-style italic
     margin-top 0
+    &.archive
+      font-size 16px
     > a
       text-decoration none
       color gray-dark
@@ -199,6 +206,19 @@ hr.small
   border-bottom-right-radius 5px
   border-bottom-left-radius 5px
 
+.post-tags, .post-categories
+  font-size 15px
+  margin-top 30px
+  margin-bottom 30px
+  a
+    border-bottom 1px dotted #ABABAB
+    text-transform uppercase
+    margin-right 10px
+    &:hover, &:visited, &:active
+      text-decoration none
+      border-bottom none
+.archive-before-pagination
+  height 30px
 footer
   padding 50px 0 65px
   .list-inline

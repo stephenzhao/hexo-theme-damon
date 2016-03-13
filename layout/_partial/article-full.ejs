@@ -31,8 +31,13 @@
 <article>
     <div class="container">
         <div class="row">
+            <%- partial('article-tags', {item: item}) %>
+            <%- partial('article-categories', {item: item}) %>
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <%- item.content %>
+            </div>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <%- partial("_partial/comments.ejs") %>
             </div>
         </div>
     </div>

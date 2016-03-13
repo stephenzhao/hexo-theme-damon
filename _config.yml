@@ -6,14 +6,18 @@ menu:
 # Title on top left of menu. Leave empty to use main blog title
 menu_title: Start Bootstrap
 
-#
+# URL of the Home page image
 index_cover: /img/home-bg.jpg
 
-# Read More text
-excerpt_link: Read More
-
-# Disqus Comments Shortname
-disqus_shortname:
+# Comments. Choose one by filling up the information
+comments:
+  # Disqus comments
+  disqus_shortname:
+  # Facebook comments
+  facebook:
+    appid: 123456789012345
+    comment_count: 5
+    comment_colorscheme: light
 
 # Google Analytics Tracking ID
 google_analytics:
