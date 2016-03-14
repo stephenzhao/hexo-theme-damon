@@ -102,6 +102,17 @@ The Google Analytics Tracking ID is configured in the theme's `_config.yml`.
 google_analytics:
 ```
 
+### Social Account
+
+Setup the links to your social pages in the theme's `_config.yml`. Links are in the footer.
+
+```
+# Social Accounts
+twitter_url:
+facebook_url:
+github_url: https://github.com/klugjo/hexo-theme-clean-blog
+```
+
 ### Author
 
 The post's author is specified in the posts front-matter:

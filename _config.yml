@@ -24,3 +24,8 @@ comments:
 
 # Google Analytics Tracking ID
 google_analytics:
+
+# Social Accounts
+twitter_url:
+facebook_url:
+github_url: https://github.com/klugjo/hexo-theme-clean-blog
