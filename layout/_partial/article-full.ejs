@@ -32,11 +32,6 @@
     <div class="container">
         <div class="row">
 
-            <!-- Gallery -->
-            <% if (item.photos && item.photos.length){ %>
-                <%- partial('post/gallery') %>
-            <% } %>
-
             <!-- Tags and categories -->
            <% if (item.categories && item.categories.length || item.tags && item.tags.length) { %>
                 <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
@@ -51,6 +46,11 @@
                         <%- partial('article-categories', {item: item}) %>
                     <% } %>
                 </div>
+            <% } %>
+
+            <!-- Gallery -->
+            <% if (item.photos && item.photos.length){ %>
+                <%- partial('gallery') %>
             <% } %>
 
             <!-- Post Main Content -->
