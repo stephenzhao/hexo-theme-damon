@@ -1,4 +1,4 @@
-# hexo-theme-clean-blog
+# Clean Blog Hexo
 
 Hexo implementation of [Clean Blog](http://blackrockdigital.github.io/startbootstrap-clean-blog/index.html)
 
@@ -118,6 +118,10 @@ By default, posts will use the home page cover image. You can specify a custom c
 ```
 cover: /assets/contact-bg.jpg
 ```
+
+## Creator
+
+This theme was created by [Blackrock Digital](https://github.com/BlackrockDigital) and adapted for Hexo by [Jonathan Klughertz](http://www.codeblocq.com/).
 
 ## License
 
