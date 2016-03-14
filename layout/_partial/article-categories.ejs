@@ -1,11 +1,8 @@
-<% if (item.categories && item.categories.length){ %>
 <%
     var categories = [];
     item.categories.forEach(function(category){
         categories.push('<a href="' + config.root + category.path + '">' + category.name + '</a>');
     });
 %>
-<div class="col-lg-4 col-md-5 post-categories">
-    <%- categories.join(' ') %>
-</div>
-<% } %>
+
+<%- categories.join(' ') %>

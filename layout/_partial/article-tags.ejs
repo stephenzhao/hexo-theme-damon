@@ -1,14 +1,10 @@
-<% if (item.tags && item.tags.length){ %>
 
-    <%
-        var tags = [];
-        item.tags.forEach(function(tag){
-            tags.push('<a href="' + config.root + tag.path + '">#' + tag.name + '</a>');
-        });
-    %>
+<%
+    var tags = [];
+    item.tags.forEach(function(tag){
+        tags.push('<a href="' + config.root + tag.path + '">#' + tag.name + '</a>');
+    });
+%>
 
-    <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
-        <%- tags.join(' ') %>
-    </div>
+<%- tags.join(' ') %>
 
-<% } %>

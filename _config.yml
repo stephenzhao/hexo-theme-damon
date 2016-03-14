@@ -9,6 +9,9 @@ menu_title: Start Bootstrap
 # URL of the Home page image
 index_cover: /img/home-bg.jpg
 
+# Default post title
+default_post_title: Untitled
+
 # Comments. Choose one by filling up the information
 comments:
   # Disqus comments

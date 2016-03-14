@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-heading">
-                    <h1><%- item.title || item.link%></h1>
+                    <h1><%- item.title || theme.default_post_title || "Untitled" %></h1>
                     <% if (item.subtitle && item.subtitle.length) { %>
                     <h2 class="post-subheading">
                         <%- item.subtitle %>
@@ -31,11 +31,34 @@
 <article>
     <div class="container">
         <div class="row">
-            <%- partial('article-tags', {item: item}) %>
-            <%- partial('article-categories', {item: item}) %>
+
+            <!-- Gallery -->
+            <% if (item.photos && item.photos.length){ %>
+                <%- partial('post/gallery') %>
+            <% } %>
+
+            <!-- Tags and categories -->
+           <% if (item.categories && item.categories.length || item.tags && item.tags.length) { %>
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    <% if (item.tags && item.tags.length){ %>
+                        <%- partial('article-tags', {item: item}) %>
+                    <% } else { %>
+                        <%- partial('article-categories', {item: item}) %>
+                    <% } %>
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    <% if (item.tags && item.tags.length && item.categories && item.categories.length){ %>
+                        <%- partial('article-categories', {item: item}) %>
+                    <% } %>
+                </div>
+            <% } %>
+
+            <!-- Post Main Content -->
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <%- item.content %>
             </div>
+
+            <!-- Comments -->
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <%- partial("_partial/comments.ejs") %>
             </div>
