@@ -4,7 +4,7 @@ menu:
   Archives: /archives
 
 # Title on top left of menu. Leave empty to use main blog title
-menu_title: Start Bootstrap
+menu_title: Configurable Title
 
 # URL of the Home page image
 index_cover: /img/home-bg.jpg
@@ -18,7 +18,7 @@ comments:
   disqus_shortname:
   # Facebook comments
   facebook:
-    appid: 123456789012345
+    appid:
     comment_count: 5
     comment_colorscheme: light
 
