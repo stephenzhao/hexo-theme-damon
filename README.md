@@ -2,7 +2,7 @@
 
 Hexo implementation of [Clean Blog](http://blackrockdigital.github.io/startbootstrap-clean-blog/index.html)
 
-Clean blog is a full featured, responsive Hexo theme. Demo here.
+Clean blog is a full featured, responsive Hexo theme. [Demo here](http://www.codeblocq.com/assets/projects/hexo-theme-clean-blog/).
 
 ## Features
 
@@ -57,7 +57,7 @@ The top left label is configured in the theme's `_config.yml`. When clicked it w
 ```
 # Title on top left of menu. Leave empty to use main blog title
 menu_title: Configurable Title
-``
+```
 
 ### Home Page cover image
 
