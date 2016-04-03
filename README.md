@@ -25,7 +25,7 @@ Clean blog is a full featured, responsive Hexo theme. [Demo here](http://www.cod
 ## Installation
 
 ```
-$ git clone https://github.com/klugjo/hexo-theme-clean-blog.git theme/clean-blog
+$ git clone https://github.com/klugjo/hexo-theme-clean-blog.git themes/clean-blog
 ```
 
 Then update your blog's main `_config.yml` to set the theme to `clean-blog`:
