@@ -129,8 +129,26 @@ author: Klug Jo
 By default, posts will use the home page cover image. You can specify a custom cover in the front-matter:
 
 ```
+title: Excerpts
+date: 2013-12-25 00:23:23
+tags: ["Excertps"]
 cover: /assets/contact-bg.jpg
+---
 ```
+
+### Post's Excerpt
+
+This theme does not support traditional excerpts. To show excerpts on the index page, use `subtitle` in the front-matter:
+
+```
+title: Excerpts
+date: 2013-12-25 00:23:23
+tags: ["Excertps"]
+subtitle: Standard Excerpts are not supported in Clean Blog but you can use subtitles in the front matter to display text in the index.
+---
+
+```
+
 
 ## Creator
 
