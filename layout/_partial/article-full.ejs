@@ -1,13 +1,38 @@
 <!-- Page Header -->
 <!-- Set your background image for this header in your post front-matter: cover -->
+
 <%
     var cover = item.cover || theme.index_cover;
 %>
+    <style type="text/css">
+    <% if (item.cover_mask){ %>
+            header.intro-header .header-mask{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                background: rgba(0,0,0, <%= item.cover_mask %>);
+            }
+    <% } %>
+    </style>
 <header class="intro-header" style="background-image: url('<%- cover %>')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-heading">
+                    <div class="tags">
+                         <!-- Tags and categories -->
+                       <% if (item.categories && item.categories.length || item.tags && item.tags.length) { %>
+                                <% if (item.tags && item.tags.length){ %>
+                                    <%- partial('article-tags', {item: item}) %>
+                                <% } else { %>
+                                    <%- partial('article-categories', {item: item}) %>
+                                <% } %>
+                                <% if (item.tags && item.tags.length && item.categories && item.categories.length){ %>
+                                    <%- partial('article-categories', {item: item}) %>
+                                <% } %>
+                        <% } %>
+
+                    </div>
                     <h1><%- item.title || theme.default_post_title || "Untitled" %></h1>
                     <% if (item.subtitle && item.subtitle.length) { %>
                     <h2 class="post-subheading">
@@ -29,24 +54,8 @@
 
 <!-- Post Content -->
 <article>
-    <div class="container">
+    <div class="container post-container">
         <div class="row">
-
-            <!-- Tags and categories -->
-           <% if (item.categories && item.categories.length || item.tags && item.tags.length) { %>
-                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
-                    <% if (item.tags && item.tags.length){ %>
-                        <%- partial('article-tags', {item: item}) %>
-                    <% } else { %>
-                        <%- partial('article-categories', {item: item}) %>
-                    <% } %>
-                </div>
-                <div class="col-lg-4 col-md-5 post-categories">
-                    <% if (item.tags && item.tags.length && item.categories && item.categories.length){ %>
-                        <%- partial('article-categories', {item: item}) %>
-                    <% } %>
-                </div>
-            <% } %>
 
             <!-- Gallery -->
             <% if (item.photos && item.photos.length){ %>

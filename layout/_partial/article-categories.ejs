@@ -1,7 +1,7 @@
 <%
     var categories = [];
     item.categories.forEach(function(category){
-        categories.push('<a href="' + config.root + category.path + '">' + category.name + '</a>');
+        categories.push('<a class="tag" href="' + config.root + category.path + '">' + category.name + '</a>');
     });
 %>
 

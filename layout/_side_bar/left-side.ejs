@@ -10,7 +10,7 @@
     <% if (theme['featured-tags']) {%>
     <section>
         <hr class="hidden-sm hidden-xs">
-        <h5><a href='<%= config.root %>/tags/'>FEATURED TAGS</a></h5>
+        <h5><a href='<%= config.root %>tags/'>FEATURED TAGS</a></h5>
         <div class="tags">
             <%- tag_cloud(site.tags, {min_font:14, max_font:14, amount: 10, order_by:'length', order: -1}) %>
         </div>
@@ -19,7 +19,7 @@
 
     <!-- Short About -->
     <section class="visible-md visible-lg">
-        <hr><h5><a href='<%= config.root %>/about/'>ABOUT ME</a></h5>
+        <hr><h5><a href='<%= config.root %>about/'>ABOUT ME</a></h5>
         <div class="short-about">
             <% if (theme['sidebar-avatar']) {%>
                 <img src="<%= theme['sidebar-avatar'] %>" />

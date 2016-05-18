@@ -38,7 +38,7 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 #Side avatar
 gravatar:
   account: damonzhaifei@gmail.com
-  size: 60
+  size: 180
 sidebar-about-description: '传说中的前端工程师 业余设计师 摄影爱好者'
 
 # Social Accounts
@@ -52,32 +52,12 @@ sns_link:
 # Friends
 friends: [
     {
+        title: "前端杂货铺",
+        href: "http://zhuanlan.zhihu.com/jscss"
+    },
+    {
         title: "前端外刊评论",
         href: "http://qianduan.guru/"
-    },{
-        title: "天镶的博客",
-        href: "http://lingyu.wang/"
-    },{
-        title: "Luke的自留地",
-        href: "http://hmqk1995.github.io"
-    },{
-        title: "Ebn's Blog",
-        href: "http://ebnbin.com/"
-    },{
-        title: "SmdCn's Blog",
-        href: "http://blog.smdcn.net"
-    },{
-        title: "解旻的博客",
-        href: "http://xieminis.me/"
-    },{
-        title: "DHong Say",
-        href: "http://dhong.co"
-    },{
-        title: "尹峰以为",
-        href: "http://ingf.github.io/"
-    },{
-        title: "前端神盾局",
-        href: "http://wepiaofei.github.io/blog/"
     }
 ]
 
