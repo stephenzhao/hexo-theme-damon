@@ -31,10 +31,53 @@ ga_t_id:
 ga_domain:
 
 
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+
+#Side avatar
+gravatar:
+  account: damonzhaifei@gmail.com
+  size: 60
+sidebar-about-description: '传说中的前端工程师 业余设计师 摄影爱好者'
+
 # Social Accounts
-twitter_url:
-facebook_url:
-weixin_url:
-zhihu_url: http://zhuanlan.zhihu.com/jscss
-weibo_url: http://weibo.com/518057456/
-github_url: https://github.com/stephenzhao
+sns_link:
+  twitter:
+  facebook:
+  weixin:
+  zhihu: http://zhuanlan.zhihu.com/jscss
+  weibo: http://weibo.com/518057456/
+  github: https://github.com/stephenzhao
+# Friends
+friends: [
+    {
+        title: "前端外刊评论",
+        href: "http://qianduan.guru/"
+    },{
+        title: "天镶的博客",
+        href: "http://lingyu.wang/"
+    },{
+        title: "Luke的自留地",
+        href: "http://hmqk1995.github.io"
+    },{
+        title: "Ebn's Blog",
+        href: "http://ebnbin.com/"
+    },{
+        title: "SmdCn's Blog",
+        href: "http://blog.smdcn.net"
+    },{
+        title: "解旻的博客",
+        href: "http://xieminis.me/"
+    },{
+        title: "DHong Say",
+        href: "http://dhong.co"
+    },{
+        title: "尹峰以为",
+        href: "http://ingf.github.io/"
+    },{
+        title: "前端神盾局",
+        href: "http://wepiaofei.github.io/blog/"
+    }
+]
+
