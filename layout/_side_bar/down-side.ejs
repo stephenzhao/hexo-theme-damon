@@ -1,0 +1,33 @@
+<!-- Down Sidebar Container -->
+<div class="
+    col-lg-8 col-lg-offset-2
+    col-md-10 col-md-offset-1
+    sidebar-container">
+
+    <!-- Featured Tags -->
+    <% if (theme['featured-tags']){ %>
+    <section>
+        <h5><a href='/tags/'>FEATURED TAGS</a></h5>
+        <div class="tags">
+            <% for (var tag in site.tags){ %>
+                <% if (tag[1].size > theme['featured-condition-size']) {%>
+                    <a href="<%= config.baseurl %>/tags/#<%= tag[0] %>" title="<%= tag[0] %>" rel="<%= tag[1].size %>">
+                        <%= tag[0] %>
+                    </a>
+                <% } %>
+            <% } %>
+        </div>
+    </section>
+    <% } %>
+
+    <!-- Friends Blog -->
+    <% if (site.friends) {%>
+    <hr>
+    <h5>FRIENDS</h5>
+    <ul class="list-inline">
+        <% for (var friend in site.friends) {%>
+            <li><a href="<%= friend.href %>"><%= friend.title %></a></li>
+        <% } %>
+    </ul>
+    <% } %>
+</div>

@@ -1,0 +1,65 @@
+<!-- Left Sidebar Container  -->
+<div class="
+    col-lg-3 col-lg-offset-0
+    col-md-3 col-md-offset-0
+    col-sm-12
+    col-xs-12
+    sidebar-container
+">
+    <!-- Featured Tags -->
+    <% if (theme['featured-tags']) {%>
+    <section>
+        <hr class="hidden-sm hidden-xs">
+        <h5><a href='<%= config.root %>/tags/'>FEATURED TAGS</a></h5>
+        <div class="tags">
+            <%- tag_cloud(site.tags, {min_font:14, max_font:14, amount: 10, order_by:'length', order: -1}) %>
+        </div>
+    </section>
+    <% } %>
+
+    <!-- Short About -->
+    <section class="visible-md visible-lg">
+        <hr><h5><a href='<%= config.root %>/about/'>ABOUT ME</a></h5>
+        <div class="short-about">
+            <% if (theme['sidebar-avatar']) {%>
+                <img src="<%= theme['sidebar-avatar'] %>" />
+            <% }else if (theme.gravatar.account) {%>
+                <img src= <%- gravatar(theme.gravatar.account, theme.gravatar.size || 60) %>
+            <%} %>
+
+            <% if (theme['sidebar-about-description']) {%>
+                <p><%= theme['sidebar-about-description'] %></p>
+            <% } %>
+            <!-- SNS Link -->
+            <ul class="list-inline">
+                <% for (var key in theme.sns_link) {%>
+                    <% if (theme.sns_link[key]) {%>
+                        <li>
+                            <a href="<%= theme.sns_link[key] %>">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <% if (key == 'zhihu') { %>
+                                        <i class="fa fa-<%= key %> fa-stack-1x fa-inverse">知</i>
+                                    <% } else{%>
+                                    <i class="fa fa-<%= key %> fa-stack-1x fa-inverse"></i>
+                                    <% } %>
+                                </span>
+                            </a>
+                        </li>
+                    <% } %>
+
+                <% } %>
+            </ul>
+        </div>
+    </section>
+    <!-- Friends Blog -->
+    <% if (theme.friends) {%>
+    <hr>
+    <h5>FRIENDS</h5>
+    <ul class="list-inline">
+        <% theme.friends.forEach (function(friend){ %>
+            <li><a href="<%=friend.href %>"><%=friend.title %></a></li>
+        <%}); %>
+    </ul>
+    <% } %>
+</div>
