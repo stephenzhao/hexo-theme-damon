@@ -8,6 +8,12 @@
                 <%- item.subtitle %>
             </h3>
         <% } %>
+        <div class="post-content-preview">
+            <%
+                var strip = strip_html(item.content);
+            %>
+            <%- truncate(strip, {length: 200})%>
+        </div>
     </a>
     <p class="post-meta">
         <!-- Date and Author -->
