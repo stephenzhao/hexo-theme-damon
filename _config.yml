@@ -7,7 +7,17 @@ menu:
 brand: Damon
 
 # URL of the Home page image
-index_cover: /img/home-bg.jpg
+index_cover: /img/damon_blog/7.jpg
+slide_img: [
+    '/img/damon_blog/1.jpg',
+    '/img/damon_blog/2.jpg',
+    '/img/damon_blog/3.jpg',
+    '/img/damon_blog/4.jpg',
+    '/img/damon_blog/5.jpg',
+    '/img/damon_blog/6.jpg',
+    '/img/damon_blog/7.jpg'
+]
+
 logo: /img/logo_yellow.png
 
 # Default post title
