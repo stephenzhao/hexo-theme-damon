@@ -150,10 +150,8 @@ subtitle: Standard Excerpts are not supported in Clean Blog but you can use subt
 
 ```
 
-
-## Creator
-
-This theme was created by [Blackrock Digital](https://github.com/BlackrockDigital) and adapted for Hexo by [Jonathan Klughertz](http://www.codeblocq.com/).
+## Thanks 
+This theme was an Hexo version of [huxpro](https://github.com/huxpro/huxpro.github.io/)
 
 ## License
 
