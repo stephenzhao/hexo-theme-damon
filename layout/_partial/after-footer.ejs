@@ -21,7 +21,13 @@
       s.parentNode.insertBefore(o, s);
     }
 </script>
-
+<script type="text/javascript">
+    var $imgs = $('.intro-header[data-imgs]');
+    var imgs = $imgs.data('imgs');
+    if (imgs.length > 0) {
+        $imgs.css('background-image', 'url('+ imgs[Math.floor(Math.random() * 100) % imgs.length] +')')
+    }
+</script>
 <!-- jquery.tagcloud.js -->
 <script>
     // only load tagcloud.js in tag.html

@@ -3,10 +3,10 @@
 <%
     var cover = theme.index_cover;
     if (_.isArray(theme.slide_img) && theme.slide_img.length > 0) {
-        cover = theme.slide_img[Math.floor(Math.random() * 100) % theme.slide_img.length]
+        cover = null;
     }
 %>
-<header class="intro-header" style="background-image: url('<%- cover %>')">
+<header class="intro-header index-page" data-imgs='<%- JSON.stringify(theme.slide_img) %>' style="background-image: url('<%- cover %>')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -19,6 +19,7 @@
         </div>
     </div>
 </header>
+
 
 <!-- Main Content -->
 <div class="container">
